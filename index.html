@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Graditude App</title>
+</head>
+<body>
+  <div class="title">
+    <h1>ToDo List!</h1>
+    <p>Add your daily task below:</p>
+  </div>
+    <div class = "form">
+      <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+      <input type="text" id="add-todo"
+      placeholder="Things to-Do">
+      <input type="submit" value="Add" class="btn btn-primary">
+    
+      </form>
+      
+      </table>
+      <p>Your Tasks:</p>
+      <p id="counter"></p>
+      <table>
+        <tr class="to-do">
+          <th><h3> To-Do:</h3></th>
+          <tbody id="tasks"></tbody>
+        </tr>
+
+    </div>
+
+    <div id="edit-box" role="aria-hidden">
+      <form action="javascript:void(0);" method="post"  id="save-edit">
+        <input type="text" id="edit-todo">
+        <input type="submit" value="Save" class="btn btn-success"/> 
+        <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+      </form>
+
+    </div>
+
+  
+  
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
